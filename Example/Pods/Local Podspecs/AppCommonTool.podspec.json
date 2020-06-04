@@ -1,0 +1,30 @@
+{
+  "name": "AppCommonTool",
+  "version": "0.0.1",
+  "summary": "App universal Component class.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/chenxuedan/AppCommonTool",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chenxuedan": "chenxuedan@zxycloud.com"
+  },
+  "source": {
+    "git": "https://github.com/chenxuedan/AppCommonTool.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AppCommonTool/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "SDWebImage": [
+
+    ]
+  }
+}

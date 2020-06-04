@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2D43585A79BA29F77EF0C66F /* Pods-AppCommonTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCommonTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AppCommonTool_Tests/Pods-AppCommonTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		468D24DF3B1BFB00ABB032DC /* Pods_AppCommonTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCommonTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50B025AC41596A0F92638C8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		50B025AC41596A0F92638C8A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* AppCommonTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCommonTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8DB4573F911D7FE5D4B77E5 /* Pods-AppCommonTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCommonTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-AppCommonTool_Tests/Pods-AppCommonTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D09B9B8F3FE04FDB7B9A281E /* Pods_AppCommonTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCommonTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E48B8927CA0BC3716F36D330 /* AppCommonTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AppCommonTool.podspec; path = ../AppCommonTool.podspec; sourceTree = "<group>"; };
-		E58BF58E37C91D3EBC512E48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E48B8927CA0BC3716F36D330 /* AppCommonTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AppCommonTool.podspec; path = ../AppCommonTool.podspec; sourceTree = "<group>"; };
+		E58BF58E37C91D3EBC512E48 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F1A5722AEE1022AC29E67E22 /* Pods-AppCommonTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCommonTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-AppCommonTool_Example/Pods-AppCommonTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				2D43585A79BA29F77EF0C66F /* Pods-AppCommonTool_Tests.debug.xcconfig */,
 				A8DB4573F911D7FE5D4B77E5 /* Pods-AppCommonTool_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -249,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = chenxuedan;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = J355KA6BNU;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +261,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -304,10 +307,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AppCommonTool_Example/Pods-AppCommonTool_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AppCommonTool/AppCommonTool.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppCommonTool.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -513,6 +520,7 @@
 			baseConfigurationReference = F1A5722AEE1022AC29E67E22 /* Pods-AppCommonTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J355KA6BNU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppCommonTool/AppCommonTool-Prefix.pch";
 				INFOPLIST_FILE = "AppCommonTool/AppCommonTool-Info.plist";
@@ -529,6 +537,7 @@
 			baseConfigurationReference = 7924CE6469239172718E027B /* Pods-AppCommonTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J355KA6BNU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppCommonTool/AppCommonTool-Prefix.pch";
 				INFOPLIST_FILE = "AppCommonTool/AppCommonTool-Info.plist";

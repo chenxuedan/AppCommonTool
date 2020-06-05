@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AppCommonTool'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'App universal Component class.'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/chenxuedan/AppCommonTool'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'chenxuedan' => 'chenxuedan@zxycloud.com' }
+  s.author           = { 'chenxuedan' => '1246758958@qq.com' }
   s.source           = { :git => 'https://github.com/chenxuedan/AppCommonTool.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

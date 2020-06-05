@@ -1,6 +1,6 @@
 {
   "name": "AppCommonTool",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "App universal Component class.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/chenxuedan/AppCommonTool",
@@ -9,11 +9,11 @@
     "file": "LICENSE"
   },
   "authors": {
-    "chenxuedan": "chenxuedan@zxycloud.com"
+    "chenxuedan": "1246758958@qq.com"
   },
   "source": {
     "git": "https://github.com/chenxuedan/AppCommonTool.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "8.0"

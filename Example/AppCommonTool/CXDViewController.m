@@ -7,10 +7,7 @@
 //
 
 #import "CXDViewController.h"
-#import "CXDNoticeView.h"
-#import "CXDHeaderMacro.h"
-#import "UIButton+CXDCategory.h"
-#import "UIView+CXDAdd.h"
+#import <AppCommonTool.h>
 
 @interface CXDViewController ()
 
